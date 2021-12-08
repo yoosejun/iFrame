@@ -93,5 +93,4 @@ public class MemberVo {
 				+ ", mbirth=" + mbirth + ", mphonenum=" + mphonenum + ", maddress=" + maddress + ", mcre_date="
 				+ mcre_date + ", mmod_date=" + mmod_date + "]";
 	}
-	
 }
