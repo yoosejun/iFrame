@@ -39,49 +39,49 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 				
-				<!-- Spring JDBC 紐⑤뱢 -->
+				<!-- Spring JDBC 모듈 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- Spring Test 紐⑤뱢 -->
+		<!-- Spring Test 모듈 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- Spring Security 紐⑤뱢 -->
+		<!-- Spring Security 모듈 -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- 而⑤꽖??? ?쇱씠釉뚮윭由?-->
+		<!-- 커넥션 풀 라이브러리-->
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
 		
-		<!-- ?ㅻ씪??JDBC ?쒕씪?대쾭 -->
+		<!-- 오라클 JDBC 드라이버 -->
 		<dependency>
 		    <groupId>com.oracle</groupId>
 		    <artifactId>ojdbc7</artifactId>
 		    <version>12.1.0.2</version>
 		</dependency>
 
-		<!-- 留덉씠諛뷀떚???쇱씠釉뚮윭由?異붽? -->
+		<!-- 마이바티스 라이브러리 추가 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.4.1</version>
 		</dependency>
 
-		<!-- 留덉씠諛뷀떚?ㅼ? ?ㅽ봽留곸쓣 ?곕룞?댁＜???쇱씠釉뚮윭由?-->
+		<!-- 마이바티스와 스프링을 연동해주는 라이브러리-->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
