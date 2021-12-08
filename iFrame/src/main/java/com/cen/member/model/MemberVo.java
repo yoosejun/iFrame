@@ -4,83 +4,94 @@ import java.util.Date;
 
 public class MemberVo {
 
-	private int no = 0;
-	private String name = "";
-	private String email = "";
-	private String password = "";
-	private Date createDate = null;
-	private Date modifyDate = null;
+	private int mno = 0;
+	private String mname = "";
+	private String memail  = "";
+	private String mpassword  = "";
+	private Date mbirth  = null;
+	private String mphonenum  = "";
+	private String maddress  = "";
+	private Date mcre_date = null;
+	private Date mmod_date = null;
+	
 	
 	public MemberVo() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
-
-	public MemberVo(int no, String name, String email, String password
-			, Date createDate, Date modifyDate) {
+	
+	public MemberVo(int mno, String mname, String memail, String mpassword, Date mbirth, String mphonenum,
+			String maddress, Date mcre_date, Date mmod_date) {
 		super();
-		this.no = no;
-		this.name = name;
-		this.email = email;
-		this.password = password;
-		this.createDate = createDate;
-		this.modifyDate = modifyDate;
+		this.mno = mno;
+		this.mname = mname;
+		this.memail = memail;
+		this.mpassword = mpassword;
+		this.mbirth = mbirth;
+		this.mphonenum = mphonenum;
+		this.maddress = maddress;
+		this.mcre_date = mcre_date;
+		this.mmod_date = mmod_date;
 	}
-
-	public int getNo() {
-		return no;
+	public int getMno() {
+		return mno;
 	}
-
-	public void setNo(int no) {
-		this.no = no;
+	public void setMno(int mno) {
+		this.mno = mno;
 	}
-
-	public String getName() {
-		return name;
+	public String getMname() {
+		return mname;
 	}
-
-	public void setName(String name) {
-		this.name = name;
+	public void setMname(String mname) {
+		this.mname = mname;
 	}
-
-	public String getEmail() {
-		return email;
+	public String getMemail() {
+		return memail;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMemail(String memail) {
+		this.memail = memail;
 	}
-
-	public String getPassword() {
-		return password;
+	public String getMpassword() {
+		return mpassword;
 	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	public void setMpassword(String mpassword) {
+		this.mpassword = mpassword;
 	}
-
-	public Date getCreateDate() {
-		return createDate;
+	public Date getMbirth() {
+		return mbirth;
 	}
-
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
+	public void setMbirth(Date mbirth) {
+		this.mbirth = mbirth;
 	}
-
-	public Date getModifyDate() {
-		return modifyDate;
+	public String getMphonenum() {
+		return mphonenum;
 	}
-
-	public void setModifyDate(Date modifyDate) {
-		this.modifyDate = modifyDate;
+	public void setMphonenum(String mphonenum) {
+		this.mphonenum = mphonenum;
 	}
-
+	public String getMaddress() {
+		return maddress;
+	}
+	public void setMaddress(String maddress) {
+		this.maddress = maddress;
+	}
+	public Date getMcre_date() {
+		return mcre_date;
+	}
+	public void setMcre_date(Date mcre_date) {
+		this.mcre_date = mcre_date;
+	}
+	public Date getMmod_date() {
+		return mmod_date;
+	}
+	public void setMmod_date(Date mmod_date) {
+		this.mmod_date = mmod_date;
+	}
 	@Override
 	public String toString() {
-		return "MemberVo [no=" + no + ", name=" + name + ", email=" + email 
-				+ ", password=" + password + ", createDate="
-				+ createDate + ", modifyDate=" + modifyDate + "]";
+		return "MemberVo [mno=" + mno + ", mname=" + mname + ", memail=" + memail + ", mpassword=" + mpassword
+				+ ", mbirth=" + mbirth + ", mphonenum=" + mphonenum + ", maddress=" + maddress + ", mcre_date="
+				+ mcre_date + ", mmod_date=" + mmod_date + "]";
 	}
-	
-	
 	
 }
