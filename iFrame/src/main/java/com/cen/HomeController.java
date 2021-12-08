@@ -1,4 +1,4 @@
-package com.cen.proa;
+package com.cen;
 
 import java.text.DateFormat;
 import java.util.Date;
