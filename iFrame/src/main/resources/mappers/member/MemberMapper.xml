@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cen.member">
+
+   <resultMap type="memberVo" id="memberResultMap">
+      <id column="mEmail" property="email"/>
+      <result column="MNAME" property="name"/>
+      <result column="MPASSWORD" property="password"/>
+      <result column="MBIRTH" property="birth"/>
+      <result column="MPHONENUM" property="phonenum"/>
+      <result column="MADDRESS1" property="address1"/>
+      <result column="MADDRESS2" property="address2"/>
+      <result column="MADDRESS3" property="address3"/>
+      <result column="ADMINCK" property="adminCk"/>
+      <result column="MCREATEDATE" property="createDate"/>
+      <result column="MMODIFYDATE" property="modifyDate"/>
+      <result column="POINT" property="point"/>
+   </resultMap>
+
+   <insert id="memberInsertOne" parameterType="memberVo">
+      INSERT INTO MEMBER
+      VALUES(#{mEmail}, #{mName}, #{mPassword}, #{mBirth}, #{mPhonenum}, 
+         #{mAddress1}, #{mAddress2}, #{mAddress3}, SYSDATE, SYSDATE, 0, 1000 )
+   </insert>
+</mapper>
