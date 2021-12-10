@@ -4,23 +4,23 @@
 <mapper namespace="com.cen.member">
 
    <resultMap type="memberVo" id="memberResultMap">
-      <id column="mEmail" property="email"/>
-      <result column="MNAME" property="name"/>
-      <result column="MPASSWORD" property="password"/>
-      <result column="MBIRTH" property="birth"/>
-      <result column="MPHONENUM" property="phonenum"/>
-      <result column="MADDRESS1" property="address1"/>
-      <result column="MADDRESS2" property="address2"/>
-      <result column="MADDRESS3" property="address3"/>
+      <id column="EMAIL" property="email"/>
+      <result column="NAME" property="name"/>
+      <result column="PASSWORD" property="password"/>
+      <result column="BIRTH" property="birth"/>
+      <result column="PHONENUM" property="phonenum"/>
+      <result column="ADDRESS1" property="address1"/>
+      <result column="ADDRESS2" property="address2"/>
+      <result column="ADDRESS3" property="address3"/>
       <result column="ADMINCK" property="adminCk"/>
-      <result column="MCREATEDATE" property="createDate"/>
-      <result column="MMODIFYDATE" property="modifyDate"/>
+      <result column="CREATEDATE" property="createDate"/>
+      <result column="MODIFYDATE" property="modifyDate"/>
       <result column="POINT" property="point"/>
    </resultMap>
 
    <insert id="memberInsertOne" parameterType="memberVo">
       INSERT INTO MEMBER
-      VALUES(#{mEmail}, #{mName}, #{mPassword}, #{mBirth}, #{mPhonenum}, 
-         #{mAddress1}, #{mAddress2}, #{mAddress3}, SYSDATE, SYSDATE, 0, 1000 )
+      VALUES(#{email}, #{name}, #{password}, #{birth}, #{phonenum}, 
+         #{address1}, #{address2}, #{address3}, 1, SYSDATE, SYSDATE, 1000 )
    </insert>
 </mapper>
